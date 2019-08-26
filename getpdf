@@ -1,0 +1,59 @@
+#!/opt/rh/rh-python36/root/usr/bin/python
+import PyPDF2
+import sys
+import re
+
+#fname = 'fname.pdf'
+fname = 'NFLDK2019_CS_PPR.pdf'
+#NFLDK2019_CS_PPR300.pdf
+#NFLDK2019_CS_PPR_DepthChart.pdf
+
+# take filename from argv
+if len(sys.argv) == 2:
+  fname = sys.argv[1]
+
+# creating a pdf file object
+pf = open(fname, 'rb')
+print('using Filename: ', fname)
+
+# creating a pdf reader object
+pr = PyPDF2.PdfFileReader(pf)
+
+# printing num pages
+print(pr.numPages)
+
+def show_pdf(pr):
+
+  #for i in range(3):
+  #for i in [10, 11]:
+  for i in range(pr.numPages):
+    print('i = ',i+1)
+
+    # open a file for each page
+    ofs = "%03d_%s" % ( i+1,'file.dat')
+    ofile = open(ofs, 'w')
+    pg = pr.getPage(i)
+
+    # get a string for the whole page
+    mystr = pg.extractText()
+
+    # get rid of so many new lines
+    slist = mystr.split('\n')
+    print(slist)
+    ##jstr = " ".join(slist)
+
+    # substitute multiple spaces with a newline
+    ##regexstr = re.sub(r'    ', "\n", jstr)
+    #regexstr = re.sub(r'([0-9]{1,2}\.)', "\n\1", regexstr)
+    #regexstr = re.sub("(\d{1,2}\.)", "\n\1", regexstr)
+    #regexstr = re.sub(r'\s*Preliminary Engineering Report\s*for\s*Flight Dynamics Research Facility', "\n", regexstr)
+    #regexstr = re.sub(r'\s*Final\s*Submittal\s*|\s*Page', "\n", regexstr, re.M)
+    #print(regexstr)
+
+    #ofile.write(pg.extractText())
+    ##ofile.write(regexstr)
+    ##ofile.close()
+
+
+show_pdf(pr)
+

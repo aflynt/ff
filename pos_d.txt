@@ -1,0 +1,15 @@
+01, (141), Bears D/ST   , (Bears D/ST   : GB) , $1, 6 
+02, (142), Jaguars D/ST , (Jaguars D/ST : KC) , $1, 10 
+03, (143), Bills D/ST   , (Bills D/ST   : NYJ), $1, 6 
+04, (144), Rams D/ST    , (Rams D/ST    : CAR), $1, 9 
+05, (147), Chargers D/ST, (Chargers D/ST: IND), $1, 12 
+06, (145), Vikings D/ST , (Vikings D/ST : ATL), $1, 12 
+07, (146), Saints D/ST  , (Saints D/ST  : HOU), $1, 9 
+08, (148), Patriots D/ST, (Patriots D/ST: PIT), $1, 10 
+09, (149), Titans D/ST  , (Titans D/ST  : CLE), $1, 11 
+10, (150), Broncos D/ST , (Broncos D/ST : OAK), $1, 10 
+11, (189), Texans D/ST  , (Texans D/ST  : NO) , $0, 10 
+12, (190), Eagles D/ST  , (Eagles D/ST  : WAS), $0, 10 
+13, (221), Colts D/ST   , (Colts D/ST   : LAC), $0, 6 
+14, (222), Browns D/ST  , (Browns D/ST  : TEN), $0, 7 
+15, (253), Ravens D/ST  , (Ravens D/ST  : MIA), $0, 8 

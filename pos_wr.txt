@@ -1,0 +1,90 @@
+01, (005),DeAndre Hopkins, HOU ,$53, 10 
+02, (006),Michael Thomas, NO ,$51, 9 
+03, (009),Davante Adams, GB ,$47, 11 
+04, (010),Julio Jones, ATL ,$47, 9 
+05, (011),Odell Beckham Jr., CLE ,$45, 7 
+06, (012),Tyreek Hill, KC ,$45, 12 
+07, (013),JuJu Smith-Schuster, PIT ,$43, 7 
+08, (016),Antonio Brown, OAK ,$39, 6 
+09, (020),Mike Evans, TB ,$36, 7 
+10, (021),Keenan Allen, LAC ,$36, 12 
+11, (027),Amari Cooper, DAL ,$30, 8 
+12, (028),Julian Edelman, NE ,$30, 10 
+13, (036),Adam Thielen, MIN ,$23, 12 
+14, (037),Brandin Cooks, LAR ,$22, 9 
+15, (038),Stefon Diggs, MIN ,$21, 12 
+16, (039),Robert Woods, LAR ,$21, 9 
+17, (040),Kenny Golladay, DET ,$20, 5 
+18, (041),Cooper Kupp, LAR ,$20, 9 
+19, (042),Chris Godwin, TB ,$19, 7 
+20, (046),T.Y. Hilton, IND ,$16, 6 
+21, (047),Alshon Jeffery, PHI ,$15, 10 
+22, (048),Tyler Lockett, SEA ,$14, 11 
+23, (049),Mike Williams, LAC ,$13, 12 
+24, (050),DJ Moore, CAR ,$12, 7 
+25, (051),Tyler Boyd, CIN ,$12, 9 
+26, (052),Allen Robinson, CHI ,$11, 6 
+27, (053),Calvin Ridley, ATL ,$11, 9 
+28, (054),Josh Gordon, NE ,$10, 10 
+29, (055),Sammy Watkins, KC ,$10, 12 
+30, (056),A.J. Green, CIN ,$10, 9 
+31, (072),Sterling Shepard, NYG ,$6, 11 
+32, (073),Jarvis Landry, CLE ,$6, 7 
+33, (074),Robby Anderson, NYJ ,$5, 4 
+34, (075),Dede Westbrook, JAC ,$5, 10 
+35, (076),Will Fuller V, HOU ,$5, 10 
+36, (077),Marvin Jones Jr., DET ,$5, 5 
+37, (078),Christian Kirk, ARI ,$4, 12 
+38, (079),Emmanuel Sanders, DEN ,$4, 10 
+39, (091),Corey Davis, TEN ,$3, 11 
+40, (092),Jamison Crowder, NYJ ,$3, 4 
+41, (093),Curtis Samuel, CAR ,$3, 7 
+42, (094),Larry Fitzgerald, ARI ,$3, 12 
+43, (095),Courtland Sutton, DEN ,$3, 10 
+44, (096),Keke Coutee, HOU ,$2, 10 
+45, (097),Michael Gallup, DAL ,$2, 8 
+46, (098),Dante Pettis, SF ,$2, 4 
+47, (106),Donte Moncrief, PIT ,$2, 7 
+48, (107),James Washington, PIT ,$2, 7 
+49, (108),Geronimo Allison, GB ,$2, 11 
+50, (109),Marquez Valdes-Scantling, GB ,$2, 11 
+51, (120),DeSean Jackson, PHI ,$2, 10 
+52, (121),Tyrell Williams, OAK ,$2, 6 4 
+53, (122),Anthony Miller, CHI ,$2, 6 5 
+54, (123),Kenny Stills, MIA ,$2, 5 
+55, (126),Adam Humphries, TEN ,$2, 11 
+56, (127),Devin Funchess, IND ,$2, 6 
+57, (128),DK Metcalf, SEA ,$2, 11 
+58, (129),Golden Tate, NYG ,$2, 11 8 
+59, (130),Albert Wilson, MIA ,$2, 5 
+60, (139),John Brown, BUF ,$1, 6 
+61, (140),DaeSean Hamilton, DEN ,$1, 10 
+62, (161),Mohamed Sanu, ATL ,$0, 9 
+63, (162),Deebo Samuel, SF ,$0, 4 
+64, (163),Chris Conley, JAC ,$0, 10 
+65, (175),DJ Chark, JAC ,$0, 10 
+66, (176),Marquise Brown, BAL ,$0, 8 
+67, (177),Paul Richardson, WAS ,$0, 10 
+68, (178),Mecole Hardman, KC ,$0, 12 
+69, (179),Tre'Quan Smith, NO ,$0, 9 
+70, (180),Andy Isabella, ARI ,$0, 12 
+71, (181),Deon Cain, IND ,$0, 6 
+72, (196),A.J. Brown, TEN ,$0, 11 
+73, (197),Terry McLaurin, WAS ,$0, 10 
+74, (198),Parris Campbell, IND ,$0, 6 
+75, (213),Jakobi Meyers, NE ,$0, 10 
+76, (214),Cole Beasley, BUF ,$0, 6 
+77, (215),Ted Ginn Jr., NO ,$0, 9 
+78, (216),Michael Crabtree, ARI ,$0, 12 
+79, (217),Randall Cobb, DAL ,$0, 8 
+80, (218),N'Keal Harry, NE ,$0, 10 
+81, (225),DeVante Parker, MIA ,$0, 5 
+82, (226),Zay Jones, BUF ,$0, 6 
+83, (227),Quincy Enunwa, NYJ ,$0, 4 
+84, (228),Willie Snead IV, BAL ,$0, 8 
+85, (229),Josh Doctson, WAS ,$0, 10 
+86, (230),Trey Quinn, WAS ,$0, 10 
+87, (231),Nelson Agholor, PHI ,$0, 10 
+88, (232),John Ross, CIN ,$0, 9 
+89, (233),Rashard Higgins, CLE ,$0, 7 
+90, (234),Robert Foster, BUF ,$0, 6 
