@@ -65,14 +65,6 @@ for player in range(len(data)):
   data[player][5] = bye
   data[player].append(onBoard)
 
-# remove player matching choice in allrank
-def rm_player(allrank):
-  for player in range(len(data)):
-    p = data[player]
-    if p[1] == allrank:
-      print("removing player",p)
-      data[player][-1] = False
-
 def showboard():
   # show all players on board
   with open('output.dat', 'w') as f:
@@ -96,19 +88,56 @@ def showpos(pos):
       if p[-1] and p[-2] == pos:
         f.write('{}\n'.format(p))
 
-def find_player(name):
-  for player in reversed(range(len(data))):
-    p = data[player]
-    hasName = p[2].find(name)
-
-    # Print player if has name
-    if hasName != -1:
-      print(p)
-
-while True:
+def find_player():
   findname = input("Name to Find: ")
-  find_player(findname)
-  allrank = int(input("Who to remove?: "))
-  rm_player(allrank)
-  showboard()
+  while findname != "done" and findname != '-1':
+    for player in reversed(range(len(data))):
+      p = data[player]
+      pname = p[2].lower()
+      hasName = pname.find(findname)
 
+      # Print player if has name
+      if hasName != -1:
+        print(p)
+    findname = input("Name to Find: ")
+
+# remove player matching choice in allrank
+def rm_player():
+  allrank = int(input("Who to remove?: "))
+  while allrank > 0:
+    for player in range(len(data)):
+      p = data[player]
+      if p[1] == allrank:
+        print("removing player",p)
+        data[player][-1] = False
+    allrank = int(input("Who to remove?: "))
+
+def correct_player():
+  allrank = int(input("Who to correct?: "))
+  while allrank > 0:
+    for player in range(len(data)):
+      p = data[player]
+      if p[1] == allrank:
+        print("correcting player",p)
+        data[player][-1] = True
+    allrank = int(input("Who to correct?: "))
+
+def indirect(c):
+  switcher={
+      'f':find_player,
+      'r':rm_player,
+      'c':correct_player,
+      }
+  func=switcher.get(c,lambda :'Invalid')
+  return func()
+
+if __name__ == "__main__":
+  while True:
+    print(''' Pick action:
+          f == find player
+          r == remove player
+          c == correct player status
+          ''')
+    pick = input("Choice: ")
+    indirect(pick)
+    showboard()
