@@ -110,6 +110,7 @@ def rm_player():
       if p[1] == allrank:
         print("removing player",p)
         data[player][-1] = False
+    showboard()
     allrank = int(input("Who to remove?: "))
 
 def correct_player():
@@ -120,6 +121,7 @@ def correct_player():
       if p[1] == allrank:
         print("correcting player",p)
         data[player][-1] = True
+    showboard()
     allrank = int(input("Who to correct?: "))
 
 def indirect(c):
