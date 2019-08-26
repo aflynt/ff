@@ -49,13 +49,13 @@
 49, (108),Geronimo Allison, GB ,$2, 11 
 50, (109),Marquez Valdes-Scantling, GB ,$2, 11 
 51, (120),DeSean Jackson, PHI ,$2, 10 
-52, (121),Tyrell Williams, OAK ,$2, 6 4 
-53, (122),Anthony Miller, CHI ,$2, 6 5 
+52, (121),Tyrell Williams, OAK ,$2, 6 
+53, (122),Anthony Miller, CHI ,$2, 6 
 54, (123),Kenny Stills, MIA ,$2, 5 
 55, (126),Adam Humphries, TEN ,$2, 11 
 56, (127),Devin Funchess, IND ,$2, 6 
 57, (128),DK Metcalf, SEA ,$2, 11 
-58, (129),Golden Tate, NYG ,$2, 11 8 
+58, (129),Golden Tate, NYG ,$2, 11 
 59, (130),Albert Wilson, MIA ,$2, 5 
 60, (139),John Brown, BUF ,$1, 6 
 61, (140),DaeSean Hamilton, DEN ,$1, 10 
