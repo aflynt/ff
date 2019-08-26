@@ -1,10 +1,6 @@
 #!/opt/rh/rh-python36/root/usr/bin/python
 import sys
 import csv
-import matplotlib.pyplot as plt
-import numpy as np
-from scipy.signal import savgol_filter
-from matplotlib.ticker import (MultipleLocator, FormatStrFormatter, AutoMinorLocator)
 
 csv.register_dialect(\
     'mydialect', delimiter = ',',quotechar = '"', doublequote = True, \
@@ -20,13 +16,12 @@ def read_file(filename):
     # get all the rows as a list
     data = list(reader)
 
+    # append position to data
     for i in range(len(data)):
       data[i].append(filename.rstrip('.txt').lstrip('pos_'))
 
     return data
 
-twoFiles = False
-#filename1 = 'names.csv'
 f1 = 'pos_d.txt'
 f2 = 'pos_k.txt'
 f3 = 'pos_qb.txt'
@@ -37,7 +32,6 @@ if len(sys.argv) == 2:
   filename1 = sys.argv[1]
   data = read_file(filename1)
 if len(sys.argv) == 3:
-  twoFiles = True
   filename1 = sys.argv[1]
   filename2 = sys.argv[2]
   data = read_file(filename1)
@@ -51,8 +45,6 @@ else:
   d5   = read_file(f5)
   d6   = read_file(f6)
   data = data+d2+d3+d4+d5+d6
-
-# combine positions for all players
 
 # Sort the data based on allrank
 data.sort(key = sort_allrank)
@@ -90,8 +82,22 @@ def showboard(choice):
         f.write('{}\n'.format(p))
         #f.write('\n'.join('{}'.format(p)))
 
+# show individual player position list
+def showpos(pos):
+  with open('b_'+pos+'.dat', 'w') as f:
+    for player in reversed(range(len(data))):
+      p = data[player]
+
+      # Print player if still on board
+      if p[-1] and p[-2] == pos:
+        f.write('{}\n'.format(p))
+
 while True:
-  choice = input("who to remove?")
-  choice = int(choice)
-  print("removing #",choice)
+  choice = int(input("who to remove?"))
   showboard(choice)
+  showpos('d')
+  showpos('k')
+  showpos('qb')
+  showpos('rb')
+  showpos('te')
+  showpos('wr')

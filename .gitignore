@@ -31,4 +31,4 @@
 *.out
 *.app
 
-output.dat
+*.dat
