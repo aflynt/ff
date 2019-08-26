@@ -65,22 +65,26 @@ for player in range(len(data)):
   data[player][5] = bye
   data[player].append(onBoard)
 
-# show all players on board
-def showboard(choice):
+# remove player matching choice in allrank
+def rm_player(allrank):
+  for player in range(len(data)):
+    p = data[player]
+    if p[1] == allrank:
+      print("removing player",p)
+      data[player][-1] = False
+
+def showboard():
+  # show all players on board
   with open('output.dat', 'w') as f:
     for player in reversed(range(len(data))):
-      p = data[player]
-
-      # remove player matching choice in allrank
-      if p[1] == choice:
-        print("removing player",p)
-        data[player][-1] = False
-        p = data[player]
-
-      # Print player if still on board
-      if p[-1]:
-        f.write('{}\n'.format(p))
-        #f.write('\n'.join('{}'.format(p)))
+      if data[player][-1]:
+        f.write('{}\n'.format(data[player]))
+  showpos('d')
+  showpos('k')
+  showpos('qb')
+  showpos('rb')
+  showpos('te')
+  showpos('wr')
 
 # show individual player position list
 def showpos(pos):
@@ -92,12 +96,19 @@ def showpos(pos):
       if p[-1] and p[-2] == pos:
         f.write('{}\n'.format(p))
 
+def find_player(name):
+  for player in reversed(range(len(data))):
+    p = data[player]
+    hasName = p[2].find(name)
+
+    # Print player if has name
+    if hasName != -1:
+      print(p)
+
 while True:
-  choice = int(input("who to remove?"))
-  showboard(choice)
-  showpos('d')
-  showpos('k')
-  showpos('qb')
-  showpos('rb')
-  showpos('te')
-  showpos('wr')
+  findname = input("Name to Find: ")
+  find_player(findname)
+  allrank = int(input("Who to remove?: "))
+  rm_player(allrank)
+  showboard()
+
