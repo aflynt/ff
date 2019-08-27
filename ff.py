@@ -6,6 +6,13 @@ csv.register_dialect(\
     'mydialect', delimiter = ',',quotechar = '"', doublequote = True, \
     skipinitialspace = True, lineterminator = '\n' )
 
+def get_int(val):
+  try:
+    ival = int(val)
+  except ValueError as verr:
+    ival = -1
+  return ival
+
 def sort_allrank(val):
   return val[1]
 
@@ -88,6 +95,19 @@ def showpos(pos):
       if p[-1] and p[-2] == pos:
         f.write('{}\n'.format(p))
 
+
+def print_player(p):
+  posrank = p[0]
+  allrank = p[1]
+  name    = p[2]
+  team    = p[3]
+  price   = p[4]
+  bye     = p[5]
+  pos     = p[6]
+  onBoard = p[7]
+  print('%2s %2d %3d %3s |%15s|' % ( pos, posrank, allrank, team, name))
+
+
 def find_player():
   findname = input("Name to Find: ")
   while findname != "done" and findname != '-1':
@@ -98,12 +118,14 @@ def find_player():
 
       # Print player if has name
       if hasName != -1:
-        print(p)
+        #print(p)
+        print_player(p)
     findname = input("Name to Find: ")
+
 
 # remove player matching choice in allrank
 def rm_player():
-  allrank = int(input("Who to remove?: "))
+  allrank = get_int(input("Who to remove?: "))
   while allrank > 0:
     for player in range(len(data)):
       p = data[player]
@@ -111,10 +133,10 @@ def rm_player():
         print("removing player",p)
         data[player][-1] = False
     showboard()
-    allrank = int(input("Who to remove?: "))
+    allrank = get_int(input("Who to remove?: "))
 
 def correct_player():
-  allrank = int(input("Who to correct?: "))
+  allrank = get_int(input("Who to correct?: "))
   while allrank > 0:
     for player in range(len(data)):
       p = data[player]
@@ -122,7 +144,7 @@ def correct_player():
         print("correcting player",p)
         data[player][-1] = True
     showboard()
-    allrank = int(input("Who to correct?: "))
+    allrank = get_int(input("Who to correct?: "))
 
 def indirect(c):
   switcher={
