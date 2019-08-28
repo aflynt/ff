@@ -1,10 +1,18 @@
 #!/opt/rh/rh-python36/root/usr/bin/python
 import sys
 import csv
+import matplotlib.pyplot as plt
 
 csv.register_dialect(\
     'mydialect', delimiter = ',',quotechar = '"', doublequote = True, \
     skipinitialspace = True, lineterminator = '\n' )
+
+def get_input(str):
+  try:
+    val = input(str)
+  except EOFError as verr:
+    val = '-1'
+  return val
 
 def get_int(val):
   try:
@@ -55,6 +63,7 @@ else:
 
 # Sort the data based on allrank
 data.sort(key = sort_allrank)
+
 
 # add onBoard Field to player
 for player in range(len(data)):
@@ -113,7 +122,7 @@ def showpos(pos):
         #f.write('{}\n'.format(p))
 
 def find_player():
-  findname = input("Name to Find: ")
+  findname = get_input("Name to Find: ")
   while findname != "done" and findname != '-1':
     for player in reversed(range(len(data))):
       p = data[player]
@@ -125,12 +134,12 @@ def find_player():
         ps = print_player(p)
         print(ps)
         #print_player(p)
-    findname = input("Name to Find: ")
+    findname = get_input("Name to Find: ")
 
 
 # remove player matching choice in allrank
 def rm_player():
-  allrank = get_int(input("Who to remove?: "))
+  allrank = get_int(get_input("Who to remove?: "))
   while allrank > 0:
     for player in range(len(data)):
       p = data[player]
@@ -138,10 +147,10 @@ def rm_player():
         print("removing player",p)
         data[player][-1] = False
     showboard()
-    allrank = get_int(input("Who to remove?: "))
+    allrank = get_int(get_input("Who to remove?: "))
 
 def correct_player():
-  allrank = get_int(input("Who to correct?: "))
+  allrank = get_int(get_input("Who to correct?: "))
   while allrank > 0:
     for player in range(len(data)):
       p = data[player]
@@ -149,7 +158,7 @@ def correct_player():
         print("correcting player",p)
         data[player][-1] = True
     showboard()
-    allrank = get_int(input("Who to correct?: "))
+    allrank = get_int(get_input("Who to correct?: "))
 
 def indirect(c):
   switcher={
@@ -167,6 +176,6 @@ if __name__ == "__main__":
           r == remove player
           c == correct player status
           ''')
-    pick = input("Choice: ")
+    pick = get_input("Choice: ")
     indirect(pick)
     showboard()
