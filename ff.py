@@ -72,12 +72,27 @@ for player in range(len(data)):
   data[player][5] = bye
   data[player].append(onBoard)
 
+def print_player(p):
+  posrank = p[0]
+  allrank = p[1]
+  name    = p[2]
+  team    = p[3]
+  price   = p[4]
+  bye     = p[5]
+  pos     = p[6]
+  onBoard = p[7]
+  ps = '%2s %2d %3d %3s |%20s| bye=%2d' % (pos, posrank, allrank, team, name, bye)
+  #print(ps)
+  return ps
+
 def showboard():
   # show all players on board
   with open('output.dat', 'w') as f:
     for player in reversed(range(len(data))):
       if data[player][-1]:
-        f.write('{}\n'.format(data[player]))
+        ps = print_player(data[player])
+        f.write('{}\n'.format(ps))
+        #f.write('{}\n'.format(data[player]))
   showpos('d')
   showpos('k')
   showpos('qb')
@@ -93,20 +108,9 @@ def showpos(pos):
 
       # Print player if still on board
       if p[-1] and p[-2] == pos:
-        f.write('{}\n'.format(p))
-
-
-def print_player(p):
-  posrank = p[0]
-  allrank = p[1]
-  name    = p[2]
-  team    = p[3]
-  price   = p[4]
-  bye     = p[5]
-  pos     = p[6]
-  onBoard = p[7]
-  print('%2s %2d %3d %3s |%15s|' % ( pos, posrank, allrank, team, name))
-
+        ps = print_player(p)
+        f.write('{}\n'.format(ps))
+        #f.write('{}\n'.format(p))
 
 def find_player():
   findname = input("Name to Find: ")
@@ -118,8 +122,9 @@ def find_player():
 
       # Print player if has name
       if hasName != -1:
-        #print(p)
-        print_player(p)
+        ps = print_player(p)
+        print(ps)
+        #print_player(p)
     findname = input("Name to Find: ")
 
 
