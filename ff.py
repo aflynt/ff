@@ -165,16 +165,56 @@ def indirect(c):
       'f':find_player,
       'r':rm_player,
       'c':correct_player,
+      'p':plot_player,
       }
   func=switcher.get(c,lambda :'Invalid')
   return func()
 
+def plot_player():
+  qb_n = []
+  qb_a = []
+  qb_p = []
+  wr_n = []
+  wr_a = []
+  wr_p = []
+  for player in reversed(range(len(data))):
+    p = data[player]
+    posrank = p[0]
+    allrank = p[1]
+    name    = p[2]
+    team    = p[3]
+    price   = p[4]
+    bye     = p[5]
+    pos     = p[6]
+    onBoard = p[7]
+    if pos == 'wr':
+      wr_n.append(pos+'-'+name)
+      wr_a.append(allrank)
+      wr_p.append(posrank)
+    elif pos == 'qb':
+      qb_n.append(pos+'-'+name)
+      qb_a.append(allrank)
+      qb_p.append(posrank)
+
+  #plt.rcParams.update({'figure.autolayout': True})
+  #fig, ax = plt.subplots()
+  #ax.barh(group_names, group_data)
+  #plt.style.use('fivethirtyeight')
+  #labels = ax.get_xticklabels()
+  #plt.setp(labels, rotation=45, horizontalalignment='right')
+  fig, ax = plt.subplots()
+  line1, = ax.plot(qb_a,qb_p,label='qb')
+  line2, = ax.plot(wr_a,wr_p,label='wr')
+  ax.legend()
+  plt.show()
+
 if __name__ == "__main__":
   while True:
     print(''' Pick action:
-          f == find player
-          r == remove player
-          c == correct player status
+          f == find player(s)
+          r == remove player(s)
+          c == correct player(s) status
+          p == plot player(s)
           ''')
     pick = get_input("Choice: ")
     indirect(pick)
