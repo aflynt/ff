@@ -43,6 +43,7 @@ f3 = 'pos_qb.txt'
 f4 = 'pos_rb.txt'
 f5 = 'pos_te.txt'
 f6 = 'pos_wr.txt'
+
 if len(sys.argv) == 2:
   filename1 = sys.argv[1]
   data = read_file(filename1)
@@ -109,6 +110,14 @@ def showboard():
   showpos('te')
   showpos('wr')
 
+def picknum():
+  cnt = 0
+  for player in range(len(data)):
+    # Print player if still on board
+    if not data[player][-1]:
+      cnt += 1
+  return cnt
+
 # show individual player position list
 def showpos(pos):
   with open('b_'+pos+'.dat', 'w') as f:
@@ -144,8 +153,9 @@ def rm_player():
     for player in range(len(data)):
       p = data[player]
       if p[1] == allrank:
-        print("removing player",p)
         data[player][-1] = False
+        strpick = 'PICK [%3d], removing player: %s' % (picknum(), p)
+        print(strpick)
     showboard()
     allrank = get_int(get_input("Who to remove?: "))
 
