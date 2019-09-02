@@ -2,9 +2,9 @@
 02, (142), Jaguars D/ST , (Jaguars D/ST : KC) , $1, 10 
 03, (143), Bills D/ST   , (Bills D/ST   : NYJ), $1, 6 
 04, (144), Rams D/ST    , (Rams D/ST    : CAR), $1, 9 
-05, (147), Chargers D/ST, (Chargers D/ST: IND), $1, 12 
-06, (145), Vikings D/ST , (Vikings D/ST : ATL), $1, 12 
-07, (146), Saints D/ST  , (Saints D/ST  : HOU), $1, 9 
+05, (145), Vikings D/ST , (Vikings D/ST : ATL), $1, 12 
+06, (146), Saints D/ST  , (Saints D/ST  : HOU), $1, 9 
+07, (147), Chargers D/ST, (Chargers D/ST: IND), $1, 12 
 08, (148), Patriots D/ST, (Patriots D/ST: PIT), $1, 10 
 09, (149), Titans D/ST  , (Titans D/ST  : CLE), $1, 11 
 10, (150), Broncos D/ST , (Broncos D/ST : OAK), $1, 10 

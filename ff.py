@@ -109,6 +109,7 @@ def showboard():
   showpos('rb')
   showpos('te')
   showpos('wr')
+  plot_player()
 
 def picknum():
   cnt = 0
@@ -187,6 +188,21 @@ def plot_player():
   wr_n = []
   wr_a = []
   wr_p = []
+  rb_n = []
+  rb_a = []
+  rb_p = []
+  te_n = []
+  te_a = []
+  te_p = []
+  d_n = []
+  d_a = []
+  d_p = []
+  k_n = []
+  k_a = []
+  k_p = []
+  t_n = [] #taken
+  t_a = []
+  t_p = []
   for player in reversed(range(len(data))):
     p = data[player]
     posrank = p[0]
@@ -197,14 +213,36 @@ def plot_player():
     bye     = p[5]
     pos     = p[6]
     onBoard = p[7]
-    if pos == 'wr':
-      wr_n.append(pos+'-'+name)
-      wr_a.append(allrank)
-      wr_p.append(posrank)
-    elif pos == 'qb':
-      qb_n.append(pos+'-'+name)
-      qb_a.append(allrank)
-      qb_p.append(posrank)
+    if onBoard:
+      if pos == 'wr':
+        wr_n.append(pos+'-'+name)
+        wr_a.append(allrank)
+        wr_p.append(posrank)
+      elif pos == 'qb':
+        qb_n.append(pos+'-'+name)
+        qb_a.append(allrank)
+        qb_p.append(posrank)
+      elif pos == 'rb':
+        rb_n.append(pos+'-'+name)
+        rb_a.append(allrank)
+        rb_p.append(posrank)
+      elif pos == 'te':
+        te_n.append(pos+'-'+name)
+        te_a.append(allrank)
+        te_p.append(posrank)
+      elif pos == 'd':
+        d_n.append(pos+'-'+name)
+        d_a.append(allrank)
+        d_p.append(posrank)
+      elif pos == 'k':
+        k_n.append(pos+'-'+name)
+        k_a.append(allrank)
+        k_p.append(posrank)
+    else:
+      t_n.append(pos+'-'+name)
+      t_a.append(allrank)
+      t_p.append(posrank)
+
 
   #plt.rcParams.update({'figure.autolayout': True})
   #fig, ax = plt.subplots()
@@ -213,10 +251,21 @@ def plot_player():
   #labels = ax.get_xticklabels()
   #plt.setp(labels, rotation=45, horizontalalignment='right')
   fig, ax = plt.subplots()
-  line1, = ax.plot(qb_a,qb_p,label='qb')
-  line2, = ax.plot(wr_a,wr_p,label='wr')
+  line1, = ax.plot(qb_a,qb_p,'bo',label='qb', markersize=2)
+  line2, = ax.plot(wr_a,wr_p,'ko',label='wr', markersize=2)
+  line3, = ax.plot(rb_a,rb_p,'ro',label='rb', markersize=2)
+  line4, = ax.plot(te_a,te_p,'co',label='te', markersize=2)
+  line5, = ax.plot(d_a,d_p,'mo',label='d', markersize=2)
+  line6, = ax.plot(k_a,k_p,'go',label='k', markersize=2)
+  line7, = ax.plot(t_a,t_p,'y.',label='gone', markersize=2)
+  plt.xlabel('Overall Pick')
+  plt.ylabel('Position Rank')
+  ax.grid(True)
   ax.legend()
-  plt.show()
+  plt.tight_layout()
+  #fig.savefig("test.png")
+  fig.savefig("test.ps")
+  #plt.show()
 
 if __name__ == "__main__":
   while True:
