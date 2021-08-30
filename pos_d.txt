@@ -1,15 +1,15 @@
-01, (141), Bears D/ST   , (Bears D/ST   : GB) , $1, 6 
-02, (142), Jaguars D/ST , (Jaguars D/ST : KC) , $1, 10 
-03, (143), Bills D/ST   , (Bills D/ST   : NYJ), $1, 6 
-04, (144), Rams D/ST    , (Rams D/ST    : CAR), $1, 9 
-05, (145), Vikings D/ST , (Vikings D/ST : ATL), $1, 12 
-06, (146), Saints D/ST  , (Saints D/ST  : HOU), $1, 9 
-07, (147), Chargers D/ST, (Chargers D/ST: IND), $1, 12 
-08, (148), Patriots D/ST, (Patriots D/ST: PIT), $1, 10 
-09, (149), Titans D/ST  , (Titans D/ST  : CLE), $1, 11 
-10, (150), Broncos D/ST , (Broncos D/ST : OAK), $1, 10 
-11, (189), Texans D/ST  , (Texans D/ST  : NO) , $0, 10 
-12, (190), Eagles D/ST  , (Eagles D/ST  : WAS), $0, 10 
-13, (221), Colts D/ST   , (Colts D/ST   : LAC), $0, 6 
-14, (222), Browns D/ST  , (Browns D/ST  : TEN), $0, 7 
-15, (253), Ravens D/ST  , (Ravens D/ST  : MIA), $0, 8 
+01, (169), Buccaneers D/ST , (Wk 1:  DAL) , $1 , 9
+02, (170), Steelers D/ST   , (Wk 1: @BUF) , $1 , 7
+03, (171), Ravens D/ST     , (Wk 1:  @LV) , $1 , 8
+04, (172), WFT D/ST        , (Wk 1:  LAC) , $1 , 9
+05, (173), 49ers D/ST      , (Wk 1: @DET) , $1 , 6
+06, (174), Bills D/ST      , (Wk 1:  PIT) , $1 , 7
+07, (175), Broncos D/ST    , (Wk 1: @NYG) , $1 ,11
+08, (176), Patriots D/ST   , (Wk 1:  MIA) , $1 ,14
+09, (177), Rams D/ST       , (Wk 1:  CHI) , $1 ,11
+10, (178), Browns D/ST     , (Wk 1:  @KC) , $1 ,13
+11, (179), Colts D/ST      , (Wk 1:  SEA) , $0 ,14
+12, (180), Vikings D/ST    , (Wk 1: @CIN) , $0 , 7
+13, (221), Dolphins D/ST   , (Wk 1:  @NE) , $0 ,14
+14, (222), Saints D/ST     , (Wk 1:   GB) , $0 , 6
+15, (253), Packers D/ST    , (Wk 1:  @NO) , $0 ,13 

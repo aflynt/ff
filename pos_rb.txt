@@ -1,85 +1,85 @@
-01, (001) , Saquon Barkley      , NYG , $57 , 11 
-02, (002) , Christian McCaffrey , CAR , $55 , 7 
-03, (003) , Alvin Kamara        , NO  , $55 , 9 
-04, (004) , Ezekiel Elliott     , DAL , $54 , 8 
-05, (007) , David Johnson       , ARI , $50 , 12 
-06, (008) , Le'Veon Bell        , NYJ , $50 , 4 
-07, (014) , Todd Gurley II      , LAR , $41 , 9 
-08, (017) , Joe Mixon           , CIN , $38 , 9 
-09, (018) , James Conner        , PIT , $37 , 7 
-10, (019) , Dalvin Cook         , MIN , $37 , 12 
-11, (022) , Nick Chubb          , CLE , $34 , 7 
-12, (023) , Kerryon Johnson     , DET , $33 , 5 
-13, (024) , Leonard Fournette   , JAC , $32 , 10 
-14, (025) , Devonta Freeman     , ATL , $32 , 9 
-15, (026) , Melvin Gordon       , LAC , $31 , 12 
-16, (031) , Josh Jacobs         , OAK , $27 , 6 
-17, (032) , Derrick Henry       , TEN , $26 , 11 
-18, (033) , Chris Carson        , SEA , $26 , 11 
-19, (034) , Aaron Jones         , GB  , $25 , 11 
-20, (035) , Damien Williams     , KC  , $24 , 12 
-21, (044) , Mark Ingram II      , BAL , $17 , 8 
-22, (045) , James White         , NE  , $17 , 10 
-23, (057) , Marlon Mack         , IND , $10 , 6 
-24, (058) , Sony Michel         , NE  , $9  , 10 
-25, (059) , Kenyan Drake        , MIA , $9  , 5 
-26, (060) , David Montgomery    , CHI , $9  , 6 
-27, (061) , Tarik Cohen         , CHI , $8  , 6 
-28, (062) , Phillip Lindsay     , DEN , $8  , 10 
-29, (063) , Derrius Guice       , WAS , $8  , 10 
-30, (064) , Duke Johnson Jr.    , HOU , $7  , 10 
-31, (080) , Tevin Coleman       , SF  , $4  , 4 
-32, (081) , Miles Sanders       , PHI , $4  , 10 
-33, (082) , Austin Ekeler       , LAC , $4  , 12 
-34, (083) , Royce Freeman       , DEN , $4  , 10 
-35, (084) , Rashaad Penny       , SEA , $4  , 11 
-36, (085) , Nyheim Hines        , IND , $4  , 6 
-37, (086) , Peyton Barber       , TB  , $4  , 7 
-38, (099) , Latavius Murray     , NO  , $2  , 9 
-39, (100) , Jordan Howard       , PHI , $2  , 10 
-40, (101) , Matt Breida         , SF  , $2  , 4 
-41, (102) , LeSean McCoy        , BUF , $2  , 6 
-42, (103) , Darrell Henderson   , LAR , $2  , 9 
-43, (104) , Darwin Thompson     , KC  , $2  , 12 
-44, (105) , Ronald Jones        , TB  , $2  , 7 
-45, (135) , Devin Singletary    , BUF , $1  , 6 
-46, (136) , Jalen Richard       , OAK , $1  , 6 
-47, (137) , Dion Lewis          , TEN , $1  , 11 
-48, (138) , Giovani Bernard     , CIN , $1  , 9 
-49, (170) , Kalen Ballage       , MIA , $0  , 5 
-50, (171) , Jaylen Samuels      , PIT , $0  , 7 
-51, (172) , Justice Hill        , BAL , $0  , 8 
-52, (173) , Tony Pollard        , DAL , $0  , 8 
-53, (174) , Chris Thompson      , WAS , $0  , 10 
-54, (184) , Justin Jackson      , LAC , $0  , 12 
-55, (185) , Carlos Hyde         , KC  , $0  , 12 
-56, (186) , Jerick McKinnon     , SF  , $0  , 4 
-57, (187) , Kareem Hunt         , CLE , $0  , 7 
-58, (188) , Malcolm Brown       , LAR , $0  , 9 
-59, (194) , Damien Harris       , NE  , $0  , 10 
-60, (195) , Mike Davis          , CHI , $0  , 6 
-61, (199) , Mark Walton         , MIA , $0  , 5 
-62, (200) , C.J. Anderson       , DET , $0  , 5 
-63, (201) , Dexter Williams     , GB  , $0  , 11 
-64, (202) , Adrian Peterson     , WAS , $0  , 10 
-65, (203) , Damarea Crockett    , HOU , $0  , 10 
-66, (204) , Jamaal Williams     , GB  , $0  , 11 
-67, (205) , Ito Smith           , ATL , $0  , 9 
-68, (206) , Alexander Mattison  , MIN , $0  , 12 
-69, (207) , Gus Edwards         , BAL , $0  , 8 
-70, (208) , Chase Edmonds       , ARI , $0  , 12 
-71, (209) , Frank Gore          , BUF , $0  , 6 
-72, (235) , Theo Riddick        , DEN , $0  , 10 
-73, (236) , Dontrell Hilliard   , CLE , $0  , 7 
-74, (237) , Darren Sproles      , PHI , $0  , 10 
-75, (238) , Benny Snell Jr.     , PIT , $0  , 7 
-76, (239) , Doug Martin         , OAK , $0  , 6 
-77, (240) , Rex Burkhead        , NE  , $0  , 10 
-78, (241) , Ryquell Armstead    , JAC , $0  , 10 
-79, (242) , Ty Montgomery       , NYJ , $0  , 4 
-80, (250) , Andre Ellington     , TB  , $0  , 7 
-81, (264) , Wayne Gallman       , NYG , $0  , 11 
-82, (265) , Alfred Morris       , DAL , $0  , 8 
-83, (276) , Alfred Blue         , JAC , $0  , 10 
-84, (277) , T.J. Yeldon         , BUF , $0  , 6 
-85, (278) , Bilal Powell        , NYJ , $0  , 4 
+01, (01) , Christian McCaffrey  , CAR  ,$62  ,13
+02, (02) , Dalvin Cook          , MI   ,$59  ,7
+03, (03) , Q Saquon Barkley       , NYG  ,$59  ,10
+04, (04) , Alvin Kamara         , NO   ,$58  ,6
+05, (05) , Derrick Henry        , TEN  ,$56  ,13
+06, (08) , Ezekiel Elliott      , DAL  ,$50  ,7
+07, (09) , Jonathan Taylor      , IND  ,$48  ,14
+08, (10) , Austin Ekeler        , LAC  ,$46  ,7
+09, (11) , Aaron Jones          , GB   ,$45  ,13
+10, (12) , Nick Chubb           , CLE  ,$45  ,13
+11, (14) , Antonio Gibson       , WAS  ,$43  ,9
+12, (15) , Najee Harris         , PIT  ,$42  ,7
+13, (22) , Joe Mixon            , CIN  ,$33  ,10
+14, (23) , Clyde Edwards-Helaire, KC   ,$32  ,12
+15, (30) , James Robinson       , JAC  ,$26  ,7
+16, (31) , David Montgomery     , CHI  ,$26  ,10
+17, (32) , Miles Sanders        , PHI  ,$25  ,14
+18, (36) , Q D'Andre Swift      , DET  ,$22  ,9
+19, (37) , O J.K. Dobbins       , BAL  ,$22  ,8
+20, (47) , Chris Carson         , SEA  ,$15  ,9
+21, (48) , Josh Jacobs          , LV   ,$14  ,8
+22, (51) , Chase Edmonds        , ARI  ,$12  ,12
+23, (52) , Javonte Williams     , DEN  ,$11  ,11
+24, (53) , Kareem Hunt          , CLE  ,$11  ,13
+25, (54) , Myles Gaskin         , MIA  ,$10  ,14
+26, (69) , Mike Davis           , ATL  , $6  ,6
+27, (70) , Damien Harris        , NE   , $6  ,14
+28, (71) , Sony Michel          , LAR  , $6  ,11
+29, (93) , Q Darrell Henderson Jr., LAR  , $3  ,11
+30, (94) , Raheem Mostert       , SF   , $3  ,6
+31, (97) , Leonard Fournette    , TB   , $2  ,9
+32, (98) , Kenyan Drake         , LV   , $2  ,8
+33, (99) , Zack Moss            , BUF  , $2  ,7
+34, (100), Melvin Gordon        , DEN  , $2  ,11
+35, (101), AJ Dillon            , GB   , $2  ,13
+36, (102), James Conner         , ARI  , $2  ,12
+37, (103), Michael Carter       , NYJ  , $2  ,6
+38, (104), Jamaal Williams      , DET  , $2  ,9
+39, (110), Ronald Jones II      , TB   , $2  ,9
+40, (111), Trey Sermon          , SF   , $2  ,6
+41, (112), Nyheim Hines         , IND  , $2  ,14
+42, (113), Phillip Lindsay      , HOU  , $2  ,10
+43, (123), Devin Singletary     , BUF  , $1  ,7
+44, (124), David Johnson        , HOU  , $1  ,10
+45, (136), J.D. McKissic        , WAS  , $1  ,9
+46, (137), James White          , NE   , $1  ,14
+47, (138), Gus Edwards          , BAL  , $1  ,8
+48, (139), Malcolm Brown        , MIA  , $1  ,14
+49, (140), Tony Pollard         , DAL  , $1  ,7
+50, (141), Q Alexander Mattison   , MIN  , $0  ,7
+51, (142), Carlos Hyde          , JAC  , $0  ,7
+52, (156), Giovani Bernard      , TB   , $0  ,9
+53, (157), Tevin Coleman        , NYJ  , $0  ,6
+54, (158), Mark Ingram II       , HOU  , $0  ,10
+55, (194), Devontae Booker      , NYG  , $0  ,10
+56, (195), Q Darrynton Evans      , TEN  , $0  ,13
+57, (196), Latavius Murray      , NO   , $0  ,6
+58, (197), Rhamondre Stevenson  , NE   , $0  ,14
+59, (198), Q Tarik Cohen          , CHI  , $0  ,10
+60, (199), Rashaad Penny        , SEA  , $0  ,9
+61, (200), Qadree Ollison       , ATL  , $0  ,6
+62, (201), Damien Williams      , CHI  , $0  ,10
+63, (202), Chuba Hubbard        , CAR  , $0  ,13
+64, (203), Q Darrel Williams      , KC   , $0  ,12
+65, (204), Ty Johnson           , NYJ  , $0  ,6
+66, (205), Q Justin Jackson       , LAC  , $0  ,7
+67, (206), Salvon Ahmed         , MIA  , $0  ,14
+68, (207), Marlon Mack          , IND  , $0  ,14
+69, (208), Boston Scott         , PHI  , $0  ,14
+70, (209), Q Xavier Jones         , LAR  , $0  ,11
+71, (210), Wayne Gallman        , SF   , $0  ,6
+72, (235), Cordarrelle Patterson, ATL  , $0  ,6
+73, (236), Samaje Perine        , CIN  , $0  ,10
+74, (237), DeeJay Dallas        , SEA  , $0  ,9
+75, (238), Joshua Kelley        , LAC  , $0  ,7
+76, (239), Rex Burkhead         , HOU  , $0  ,10
+77, (240), Brian Hill           , TEN  , $0  ,13
+78, (241), J.J. Taylor          , NE   , $0  , 14
+79, (242), Kenneth Gainwell     , PH   , $0  , 14
+80, (250), Tony Jones Jr.       , NO   , $0  , 6
+81, (264), Kyle Juszczyk        , SF   , $0  , 6
+82, (265), Dare Ogunbowale      , JAC  , $0  , 7
+83, (276), Q La'Mical Perine      , NYJ  , $0  , 6
+84, (277), Benny Snell Jr.      , PIT  , $0  , 7
+85, (278), Q Jalen Richard        , LV   , $0  , 8

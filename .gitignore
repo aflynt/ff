@@ -34,3 +34,8 @@
 *.dat
 *.png
 *.ps
+
+jsonTEST*
+
+*pdf
+runner

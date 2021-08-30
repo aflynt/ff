@@ -1,35 +1,35 @@
-01, (015),Travis Kelce, KC ,$39 , 12 
-02, (029),George Kittle, SF ,$28 , 4 
-03, (030),Zach Ertz, PHI ,$27 , 10 
-04, (065),Evan Engram, NYG ,$7 , 11 
-05, (066),O.J. Howard, TB ,$7 , 7 
-06, (067),Hunter Henry, LAC ,$7 , 12 
-07, (068),Jared Cook, NO ,$6 , 9 
-08, (110),Vance McDonald, PIT ,$2 , 7 
-09, (111),David Njoku, CLE ,$2 , 7 
-10, (112),Delanie Walker, TEN ,$2 , 11 
-11, (113),Austin Hooper, ATL ,$2 , 9 
-12, (131),Trey Burton, CHI ,$1 , 6 
-13, (132),Jordan Reed, WAS ,$1 , 10 
-14, (133),Mark Andrews, BAL ,$1 , 8 
-15, (134),Greg Olsen, CAR ,$1 , 7 
-16, (164),Jack Doyle, IND ,$0 , 6 
-17, (165),Eric Ebron, IND ,$0 , 6 
-18, (166),Jimmy Graham, GB ,$0 , 11 
-19, (183),Kyle Rudolph, MIN ,$0 , 12 
-20, (193),Chris Herndon, NYJ ,$0 , 4 
-21, (210),T.J. Hockenson, DET ,$0 , 5 
-22, (211),Noah Fant, DEN ,$0 , 10 
-23, (246),Tyler Eifert, CIN ,$0 , 9 
-24, (247),Darren Waller, OAK ,$0 , 6 
-25, (248),Mike Gesicki, MIA ,$0 , 5 
-26, (249),Will Dissly, SEA ,$0 , 11 
-27, (257),Dallas Goedert, PHI ,$0 , 10 
-28, (258),Gerald Everett, LAR ,$0 , 9 
-29, (259),Jason Witten, DAL ,$0 , 8 
-30, (289),Benjamin Watson, NE ,$0 , 10 
-31, (290),Matt LaCosse, NE ,$0 , 10 
-32, (291),Jordan Thomas, HOU ,$0 , 10 
-33, (292),Hayden Hurst, BAL ,$0 , 8 
-34, (293),Dawson Knox, BUF ,$0 , 6 
-35, (311),Vernon Davis, WAS ,$0 , 10 
+01, (006) ,Travis Kelce   , KC  , $53 ,12
+02, (024) ,Darren Waller  , LV  , $32 ,8
+03, (029) ,George Kittle  , SF  , $28 ,6
+04, (060) ,Mark Andrews   , BAL , $09 ,8
+05, (061) , Q T.J. Hockenson , DET , $08 ,9
+06, (062) ,Kyle Pitts     , ATL , $08 ,6
+07, (077) ,Logan Thomas   , WAS , $05 ,9
+08, (083) , Q Noah Fant      , DEN , $04 ,11
+09, (105) ,Dallas Goedert , PHI , $02 ,14
+10, (106) ,Robert Tonyan  , GB  , $02 ,13
+11, (107) ,Jonnu Smith    , NE  , $02 ,14
+12, (108) ,Mike Gesicki   , MIA , $02 ,14
+13, (130) , D Irv Smith Jr   , MIN , $01 ,7
+14, (131) ,Tyler Higbee   , LAR , $01 ,11
+15, (132) ,Evan Engram    , NYG , $01 ,10
+16, (143) ,Austin Hooper  , CLE , $00 ,13
+17, (144) , Q Hunter Henry   , NE  , $00 ,14
+18, (145) ,Rob Gronkowski , TB  , $00 ,9
+19, (165) ,Eric Ebron     , PIT , $00 ,7
+20, (166) ,Cole Kmet      , CHI , $00 ,10
+21, (167) ,Zach Ertz      , PHI , $00 ,14
+22, (211) ,Anthony Firkser, TEN , $00 ,13
+23, (246) ,Jared Cook     , LAC , $00 ,7
+24, (247) , Q Adam Trautman  , NO  , $00 ,6
+25, (248) ,Blake Jarwin   , DAL , $00 ,7
+26, (249) ,Gerald Everett , SEA , $00 ,9
+27, (257) ,C.J. Uzomah    , CIN , $00 ,10
+28, (258) ,O.J. Howard    , TB  , $00 ,9
+29, (259) ,Jordan Akins   , HOU , $00 ,10
+30, (289) ,Jack Doyle     , IND , $00 ,14
+31, (290) ,Hayden Hurst   , ATL , $00 ,6
+32, (291) ,Dan Arnold     , CAR , $00 ,13
+33, (292) ,Dalton Schultz , DAL , $00 ,7
+34, (293) ,Dawson Knox    , BUF , $00 ,7
+35, (311) , Q Donald Parham  , LAC , $00 ,7

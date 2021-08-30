@@ -1,4 +1,5 @@
-#!/opt/rh/rh-python36/root/usr/bin/python
+#!/usr/bin/python3
+
 import PyPDF2
 import sys
 import re
@@ -11,7 +12,6 @@ fname = 'NFLDK2019_CS_PPR.pdf'
 # take filename from argv
 if len(sys.argv) == 2:
   fname = sys.argv[1]
-
 # creating a pdf file object
 pf = open(fname, 'rb')
 print('using Filename: ', fname)
@@ -39,7 +39,12 @@ def show_pdf(pr):
 
     # get rid of so many new lines
     slist = mystr.split('\n')
-    print(slist)
+    #print(slist)
+    for i,astr in enumerate(slist):
+      if i > 20:
+        break
+      print(f' I[{i:2d}] = [{astr}]')
+
     ##jstr = " ".join(slist)
 
     # substitute multiple spaces with a newline

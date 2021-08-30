@@ -1,4 +1,4 @@
-#!/opt/rh/rh-python36/root/usr/bin/python
+#!/usr/bin/python3
 import sys
 import csv
 import matplotlib.pyplot as plt
