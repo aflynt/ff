@@ -1,0 +1,17 @@
+[
+ {"pos":"K", "posrank":  1, "allrank":181, "name":"Harrison Butker  "  , "team":"KC " , "bye":12 },
+ {"pos":"K", "posrank":  2, "allrank":182, "name":"Justin Tucker    "  , "team":"BAL" , "bye":8  },
+ {"pos":"K", "posrank":  3, "allrank":183, "name":"Graham Gano      "  , "team":"NYG" , "bye":10 },
+ {"pos":"K", "posrank":  4, "allrank":184, "name":"Jason Myers      "  , "team":"SEA" , "bye":9  },
+ {"pos":"K", "posrank":  5, "allrank":185, "name":"Brandon McManus  "  , "team":"DEN" , "bye":11 },
+ {"pos":"K", "posrank":  6, "allrank":186, "name":"Jason Sanders    "  , "team":"MIA" , "bye":14 },
+ {"pos":"K", "posrank":  7, "allrank":187, "name":"Younghoe Koo     "  , "team":"ATL" , "bye":6  },
+ {"pos":"K", "posrank":  8, "allrank":188, "name":"Matt Gay         "  , "team":"LAR" , "bye":11 },
+ {"pos":"K", "posrank":  9, "allrank":189, "name":"Greg Zuerlein    "  , "team":"DAL" , "bye":7  },
+ {"pos":"K", "posrank": 10, "allrank":190, "name":"Tyler Bass       "  , "team":"BUF" , "bye":7  },
+ {"pos":"K", "posrank": 11, "allrank":191, "name":"Josh Lambo       "  , "team":"JAC" , "bye":7  },
+ {"pos":"K", "posrank": 12, "allrank":192, "name":"Matt Prater      "  , "team":"ARI" , "bye":12 },
+ {"pos":"K", "posrank": 13, "allrank":223, "name":"Daniel Carlson   "  , "team":"LV " , "bye":8  },
+ {"pos":"K", "posrank": 14, "allrank":224, "name":"Nick Folk        "  , "team":"NE " , "bye":14 },
+ {"pos":"K", "posrank": 15, "allrank":255, "name":"Chase McLaughlin "  , "team":"CLE" , "bye":13 }
+]

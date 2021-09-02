@@ -1,0 +1,17 @@
+[
+{ "pos": "D", "posrank" :  1, "allrank" : 169, "name":"Buccaneers D/ST" , "team":"TB  1:  DAL" , "bye": 9 },
+{ "pos": "D", "posrank" :  2, "allrank" : 170, "name":"Steelers D/ST  " , "team":"PIT 1: @BUF" , "bye": 7 },
+{ "pos": "D", "posrank" :  3, "allrank" : 171, "name":"Ravens D/ST    " , "team":"BAL 1:  @LV" , "bye": 8 },
+{ "pos": "D", "posrank" :  4, "allrank" : 172, "name":"WFT D/ST       " , "team":"WAS 1:  LAC" , "bye": 9 },
+{ "pos": "D", "posrank" :  5, "allrank" : 173, "name":"49ers D/ST     " , "team":"SF  1: @DET" , "bye": 6 },
+{ "pos": "D", "posrank" :  6, "allrank" : 174, "name":"Bills D/ST     " , "team":"BUF 1:  PIT" , "bye": 7 },
+{ "pos": "D", "posrank" :  7, "allrank" : 175, "name":"Broncos D/ST   " , "team":"DEN 1: @NYG" , "bye":11 },
+{ "pos": "D", "posrank" :  8, "allrank" : 176, "name":"Patriots D/ST  " , "team":"NE  1:  MIA" , "bye":14 },
+{ "pos": "D", "posrank" :  9, "allrank" : 177, "name":"Rams D/ST      " , "team":"LAR 1:  CHI" , "bye":11 },
+{ "pos": "D", "posrank" : 10, "allrank" : 178, "name":"Browns D/ST    " , "team":"CLE 1:  @KC" , "bye":13 },
+{ "pos": "D", "posrank" : 11, "allrank" : 179, "name":"Colts D/ST     " , "team":"IND 1:  SEA" , "bye":14 },
+{ "pos": "D", "posrank" : 12, "allrank" : 180, "name":"Vikings D/ST   " , "team":"MIN 1: @CIN" , "bye": 7 },
+{ "pos": "D", "posrank" : 13, "allrank" : 221, "name":"Dolphins D/ST  " , "team":"MIA 1:  @NE" , "bye":14 },
+{ "pos": "D", "posrank" : 14, "allrank" : 222, "name":"Saints D/ST    " , "team":"NO  1:   GB" , "bye": 6 },
+{ "pos": "D", "posrank" : 15, "allrank" : 253, "name":"Packers D/ST   " , "team":"GB  1:  @NO" , "bye":13 }
+]
