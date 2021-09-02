@@ -4,6 +4,7 @@ import json
 from operator import contains, itemgetter
 from colorama import Fore, Back, Style
 from enum import Enum
+from draft_order import get_pick_numbers
 
 class Color(Enum):
     OFF    = 1
@@ -11,6 +12,13 @@ class Color(Enum):
     DELIM  = 3
     PROMPT = 4
     CHILL = 5
+    RESET = 6
+    POS_WR = 7
+    POS_TE = 8
+    POS_K  = 9
+    POS_QB = 10
+    POS_RB = 11
+    POS_D  = 12
 
 def get_list_of_players(fname):
     with open(fname) as f:
@@ -82,8 +90,36 @@ def color_wrap(ps, inColor):
         f = Fore.MAGENTA
         b = Back.RESET
         s = Style.NORMAL
+    elif inColor == Color.RESET:
+        f = Fore.RESET
+        b = Back.RESET
+        s = Style.RESET_ALL
+    elif inColor == Color.POS_WR: # YELLOW BLUE
+        f = Fore.YELLOW
+        b = Back.BLUE
+        s = Style.BRIGHT
+    elif inColor == Color.POS_TE: # B M
+        f = Fore.BLACK
+        b = Back.MAGENTA
+        s = Style.NORMAL
+    elif inColor == Color.POS_K:
+        f = Fore.RED
+        b = Back.RESET
+        s = Style.NORMAL
+    elif inColor == Color.POS_QB:
+        f = Fore.MAGENTA
+        b = Back.RESET
+        s = Style.NORMAL
+    elif inColor == Color.POS_RB: # OK
+        f = Fore.YELLOW
+        b = Back.RED
+        s = Style.NORMAL
+    elif inColor == Color.POS_D:
+        f = Fore.WHITE
+        b = Back.RESET
+        s = Style.NORMAL
 
-    ps = f + b + s + ps + e
+    ps = f + b + s + f'{ps}' + e
     return ps
 
 def d_clean_player_data(players):
@@ -100,24 +136,48 @@ def d_print_player(p, pick, toFile=False):
   team    = p["team"]
   name    = p["name"]
   bye     = p["bye"]
+
+  if p['onBoard'] and p['allrank'] >= pick:
+      if   pos == 'WR':
+           pos =     color_wrap(pos,     Color.POS_WR)
+      elif pos == 'TE':
+           pos =     color_wrap(pos,     Color.POS_TE)
+      elif pos == 'K':
+           pos =     color_wrap(pos,     Color.POS_K)
+      elif pos == 'QB':
+           pos =     color_wrap(pos,     Color.POS_QB)
+      elif pos == 'RB':
+           pos =     color_wrap(pos,     Color.POS_RB)
+      elif pos == 'D':
+           pos =     color_wrap(pos,     Color.POS_D)
+
+  # bar graph for allrank
   NX = int(allrank*80/300)
   ARSTR = 'X'*NX + ' '*(80-NX) + '|'
   OB = 'OB _'
   if p['onBoard']:
       OB = 'OB 1'
-  if toFile and p['onBoard']:
-    ps = '%2s %2d %3d %11s |%30s| bye=%2d' % \
-        (pos, posrank, allrank, team, name, bye)
+
+  if toFile:
+    if p['onBoard']:
+        ps = '%2s %2d %3d |%25s| %3s bye=%2d' % \
+            (pos, posrank, allrank, name, team, bye)
+        ps = color_wrap(ps, Color.RESET)
+        return ps
+
+  # not to file
   else:
-    ps = '%2s %2d %3d %11s |%30s| bye=%2d %s %s' % \
-        (pos, posrank, allrank, team, name, bye, OB, ARSTR)
+    ps = '%2s %2d %3d |%25s| %3s bye=%2d %s %s' % \
+        (pos, posrank, allrank, name, team, bye, OB, ARSTR)
 
-  if not p['onBoard']:
-      ps = color_wrap(ps, Color.OFF)
-  elif p['allrank'] < pick:
-      ps = color_wrap(ps, Color.GOOD)
+    if not p['onBoard']:
+        #ps = color_wrap(ps, Color.RESET)    
+        ps = color_wrap(ps, Color.OFF)
+    elif p['allrank'] < pick:
+        #ps = color_wrap(ps, Color.RESET)    
+        ps = color_wrap(ps, Color.GOOD)
 
-  return ps
+    return ps
 
 def d_showboard(players):
   # show all players on board
@@ -245,8 +305,15 @@ def d_find_player(players):
       pkey = 'allrank'
   elif choice == 'p' or choice == 'pos':
       pkey = 'pos'
+      positions = set([ p['pos'] for p in players ])
+      pstr = ' '.join(positions)
+      print( color_wrap(pstr, Color.CHILL) )
   else:
       pkey = 'name'
+      names = list(set([ p['name'].split()[-1] for p in players if p['allrank'] < 140]))
+      names.sort()
+      pstr = ' '.join(names)
+      print( color_wrap(pstr, Color.CHILL) )
   
   print(color_wrap( f'finding by: {pkey}', Color.CHILL))
   findval = fv_helper(pkey)
@@ -255,13 +322,19 @@ def d_find_player(players):
 
     matched_players = find_players_by_key(findval, players, pkey)
 
+    team_picks = get_pick_numbers(7)
+
     showFlag = True
     pick = picknum(players)
     for player in matched_players:
-        ps = d_print_player(player, picknum(players))
+        ps = d_print_player(player, pick)
+        if player['allrank']+1 in team_picks:
+            delimstr = f'{int(player["allrank"] / 12) + 1} {player["allrank"]+1} ' + '-'*(80+42)
+            delimstr = color_wrap(delimstr, Color.CHILL)
+            print(delimstr)
         if player['allrank'] < pick and showFlag:
             showFlag = False
-            delimstr = f'PICK # {pick} ' + '-'*80
+            delimstr = f'PICK # {pick} ' + '-'*(80+42)
             delimstr = color_wrap(delimstr, Color.DELIM)
             print(delimstr)
         print(ps)

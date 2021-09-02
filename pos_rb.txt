@@ -1,6 +1,6 @@
 01, (01) , Christian McCaffrey  , CAR  ,$62  ,13
-02, (02) , Dalvin Cook          , MI   ,$59  ,7
-03, (03) , Q Saquon Barkley       , NYG  ,$59  ,10
+02, (02) , Dalvin Cook          , MIN  ,$59  ,7
+03, (03) , Q Saquon Barkley     , NYG  ,$59  ,10
 04, (04) , Alvin Kamara         , NO   ,$58  ,6
 05, (05) , Derrick Henry        , TEN  ,$56  ,13
 06, (08) , Ezekiel Elliott      , DAL  ,$50  ,7
