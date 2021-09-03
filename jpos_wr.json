@@ -56,7 +56,7 @@
   { "pos":"WR", "posrank":55, "allrank":121, "name": "Jalen Reagor       ", "team":"PHI  ", "bye":14 },
   { "pos":"WR", "posrank":56, "allrank":124, "name": "Q Tyrell Williams  ", "team":"DET  ", "bye":9 },
   { "pos":"WR", "posrank":57, "allrank":125, "name": "Parris Campbell    ", "team":"IND  ", "bye":14 },
-  { "pos":"WR", "posrank":58, "allrank":126, "name": "O T.Y. Hilton      ", "team":"IND  ", "bye":14 },
+  { "pos":"WR", "posrank":58, "allrank":126, "name": "X T.Y. Hilton      ", "team":"IND  ", "bye":14 },
   { "pos":"WR", "posrank":59, "allrank":127, "name": "Mecole Hardman     ", "team":"KC   ", "bye":12 },
   { "pos":"WR", "posrank":60, "allrank":128, "name": "Darnell Mooney     ", "team":"CHI  ", "bye":10 },
   { "pos":"WR", "posrank":61, "allrank":149, "name": "Elijah Moore       ", "team":"NYJ  ", "bye":6 },
@@ -88,5 +88,5 @@
   { "pos":"WR", "posrank":87, "allrank":231, "name": "Q Denzel Mims      ", "team":"NYJ  ", "bye":6 },
   { "pos":"WR", "posrank":88, "allrank":232, "name": "Demarcus Robinson  ", "team":"KC   ", "bye":12 },
   { "pos":"WR", "posrank":89, "allrank":233, "name": "Byron Pringle      ", "team":"KC   ", "bye":12 },
-  { "pos":"WR", "posrank":90, "allrank":234, "name": "O Michael Thomas   ", "team":"NO   ", "bye":6 }
+  { "pos":"WR", "posrank":90, "allrank":234, "name": "X Michael Thomas   ", "team":"NO   ", "bye":6 }
 ]
